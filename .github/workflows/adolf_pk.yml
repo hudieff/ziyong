@@ -9,7 +9,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: adolf_pk
+    types: ddo_pk
 jobs:
   build:
 
@@ -26,7 +26,7 @@ jobs:
           npm install
       - name: '运行 【京享值PK】'
         run: |
-          node adolf_pk.js
+          node ddo_pk.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
